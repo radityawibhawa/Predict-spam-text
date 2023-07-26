@@ -13,10 +13,10 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 warnings.filterwarnings("ignore", category=InconsistentVersionWarning)
 
-with open("D:/Data Science/svm_model.pkl", "rb") as f:
+with open("svm_model.pkl", "rb") as f:
     loaded = pickle.load(f)
 
-with open("D:/Data Science/tfidf.pkl", "rb") as f:
+with open("tfidf.pkl", "rb") as f:
     loaded_tfidf = pickle.load(f)
 
 def cleaning(text):
